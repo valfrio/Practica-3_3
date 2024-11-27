@@ -96,4 +96,48 @@ Y vemos que la aplicación funciona correctamente:
 
 ## Despliegue de la aplicación
 
-Ahora debemos repetir todos los pasos anteriores pero con la aplicación 
+Ahora debemos repetir todos los pasos anteriores pero con la aplicación https://github.com/raul-profesor/Practica-3.5 . Por ello, iré un poco más rápido.
+
+Después de clonar el repositorio, creamos el archivo .env:
+
+![21](includes/images/29.png)
+
+Le damos los permisos necesarios y cambiamos el propietario:
+
+![22](includes/images/30.png)
+
+Inicializamos el entorno virtual:
+
+![23](includes/images/31.png)
+
+Probamos la aplicación:
+
+![24](includes/images/33.png)
+
+Comprobamos que gunicorn funciona correctamente:
+
+![25](includes/images/34.png)
+
+Creamos el archivo de configuración para systemd:
+
+![26](includes/images/36.png)
+
+El archivo de configuración de nginx:
+
+![27](includes/images/38.png)
+
+Habilitamos el servicio de nginx:
+
+![28](includes/images/39.png)
+
+Hacemos el enlace simbólico:
+
+![29](includes/images/40.png)
+
+Volvemos a cambiar el archivo /etc/hosts:
+
+![30](includes/images/41.png)
+
+Y comprobamos que la aplicación funciona correctamente:
+
+![31](includes/images/42.png)
